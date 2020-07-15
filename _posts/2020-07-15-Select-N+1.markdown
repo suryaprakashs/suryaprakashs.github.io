@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Select N+1"
+date:   2020-07-15 21:54:00 +0530
+categories: coding
+---
+The one thing you should not event remotely think about doing is that writing code with Select N+1 problem. You can easily identify the problem just looking at the code. How hard it going to be?
+
+Anyway, the code I am refactoring contains bunch of blocks with Select N+1 problem.
+
+{% highlight csharp %}
+foreach (var model in models)
+{
+    // Some logic
+
+    // Warning: Select N+1
+    IEnumerable<Foo> foos = _fooRepository.GetById(model.fooId);
+    foreach (var foo in foos)
+    {
+        // Some logic
+    }
+    _fooRepository.Update(foos);
+}  
+{% endhighlight %}
+
+What a way to spend my time today? 😷
