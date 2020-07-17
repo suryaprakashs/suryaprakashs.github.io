@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Well well well. What do we have here?
+Somewhat a programmer. Beginner writer. 
 
-A stuvid blg.
+All thoughts are mine alone. 
 
-Will update here soon. (Maybe never, who knows)
+I will update more when I think of it. meh!
